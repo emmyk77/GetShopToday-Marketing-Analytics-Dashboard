@@ -37,9 +37,7 @@ The objective is to transform raw campaign data into actionable marketing insigh
 •	PPC contributed the highest revenue.
 •	CPA varies significantly across campaign types.
 •	Email and Affiliate campaigns show strong efficiency in ROI.
-📷 Dashboard Preview
-(Insert image file in your repository and link it like this)
-![Dashboard Preview](images/dashboard_preview.png)
+📷 Dashboard Preview<img width="1164" height="572" alt="image" src="https://github.com/user-attachments/assets/39500fce-6acf-4d81-ba8e-bf83792c8336" />
 📂 Dataset Description
 The dataset includes:
 •	Campaign Type
