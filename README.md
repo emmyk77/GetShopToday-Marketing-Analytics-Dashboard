@@ -2,7 +2,7 @@
 🔍 Project Overview
 This project analyzes marketing campaign performance for GetShop Today, focusing on spend efficiency, ROI, conversions, CPA, CPC, and revenue generation across multiple campaign types.
 
-🎯 Objectives
+🎯 Objectives 
 Evaluate campaign spend efficiency
 
 Analyze ROI and revenue contribution
