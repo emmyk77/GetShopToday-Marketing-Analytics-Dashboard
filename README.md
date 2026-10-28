@@ -1,84 +1,85 @@
-###📊 GetShop Today – E-Commerce Marketing Analysis Dashboard
----
-##🔎 Project Overview
+# GetShop Today — E-Commerce Marketing Analytics Dashboard
 
-This project presents a comprehensive marketing performance analysis for GetShop Today, an e-commerce business. The dashboard evaluates campaign effectiveness across multiple channels by analyzing spend efficiency, ROI, customer acquisition cost, traffic, conversions, and revenue contribution.
-The objective is to transform raw campaign data into actionable marketing insights that support strategic decision-making.
----
+An Excel dashboard exploring marketing spend, campaign performance, customer conversions, and revenue across e-commerce channels.
 
-##🎯 Business Objectives
+**Tools:** Microsoft Excel · Pivot Tables · Slicers · Data Visualization
 
-•	Evaluate overall marketing spend performance
-•	Compare ROI across campaign types
-•	Analyze CPA, CPC, and CTR efficiency
-•	Identify high-converting marketing channels
-•	Determine revenue contribution by campaign
+[View Excel Workbook](GetShop%20Today%20Customer%20Data%20%20Final%20project.xlsx) · [View Dataset](Datasets/GetShop%20Today%20Customer%20Data.csv) · [Explore the Analysis](#analysis-and-findings)
 
----
+## Dashboard Preview
 
-##📈 Key Performance Indicators (KPIs)
+![GetShop Today marketing dashboard showing spend, traffic, conversions, and revenue by campaign, with filters for product category, customer location, and referral source.](Images/dashboard_preview.png.jpeg)
 
-•	Total Spend: $84K
-•	Total ROI: 49.54
-•	Total Clicks: 4,832K
-•	Total CPA: $23K
-•	Total Conversions: 276
-•	Total Revenue: $59K
+[View full-size dashboard](Images/dashboard_preview.png.jpeg)
 
----
+## Project Overview
 
-###📊 Analysis Performed
----
-##1️⃣ Spend Analysis
+This project uses Microsoft Excel to examine marketing performance for GetShop Today, an e-commerce business. It brings campaign spend, traffic, conversions, and revenue into one dashboard to support comparisons across marketing channels.
 
-•	Spend by campaign type
-•	CPA comparison across channels
+The analysis covers Influencer, PPC, Email, Social Media, Affiliate, and Unknown campaign categories. Dashboard slicers allow users to explore results by product category, customer location, and referral source.
 
-##2️⃣ Traffic Analysis
-•	Click distribution by campaign
-•	CPC and CTR performance comparison
+## Business Questions
 
-##3️⃣ Conversion Analysis
-•	Paid customers by campaign
-•	Revenue contribution by channel
+- How is marketing spend distributed across campaign types?
+- Which campaigns attract the most clicks?
+- Which channels generate the most paid customers and revenue?
+- How do cost per acquisition (CPA), cost per click (CPC), and click-through rate (CTR) compare across campaigns?
 
----
-##🛠 Tools & Techniques Used
+## Dashboard Metrics
 
-•	Microsoft Excel
-•	Data Cleaning & Transformation
-•	Pivot Tables
-•	KPI Calculation
-•	Interactive Dashboard Design
-•	Data Visualization Best Practices
+The following figures reproduce the values displayed in the dashboard preview.
 
----
-##📌 Key Insights
+| Metric | Displayed value |
+| --- | ---: |
+| Total spend | $84K |
+| Total clicks | 4,832K |
+| Total conversions | 276 |
+| Total revenue | $59K |
+| Total ROI | $49.54 |
+| Total CPA | $23K |
 
-•	Influencer campaigns generated the highest conversions.
-•	PPC contributed the highest revenue.
-•	CPA varies significantly across campaign types.
-•	Email and Affiliate campaigns show strong efficiency in ROI.
+> **Metric interpretation:** K means thousand. The existing dashboard displays ROI as a currency value and CPA as a total. Their formulas, aggregation, and number formats should be reviewed before using these two figures to assess profitability or acquisition efficiency.
 
----
-📷 Dashboard Preview<img width="1164" height="572" alt="image" src="https://github.com/user-attachments/assets/39500fce-6acf-4d81-ba8e-bf83792c8336" />
+## Analysis and Findings
 
----
+| Analysis area | What the dashboard compares | Finding visible in the preview |
+| --- | --- | --- |
+| Spend | Marketing spend and CPA by campaign | Influencer campaigns have the highest displayed spend, at approximately $19K. |
+| Traffic | Clicks, CPC, and CTR by campaign | Influencer campaigns lead with approximately 980K clicks. |
+| Conversions | Paid customers by campaign | Influencer campaigns record 60 paid customers, followed by PPC with 54. |
+| Revenue | Revenue contribution by campaign | PPC has the highest displayed revenue, at approximately $12K, followed by Influencer at $11K. |
 
-##📂 Dataset Description
+These comparisons identify channels for further investigation. Spend, customer acquisition, and revenue should be considered together when evaluating campaign performance.
 
-The dataset includes:
-•	Campaign Type
-•	Product Category
-•	Customer Location
-•	Referral Source
-•	Spend
-•	Clicks
-•	Conversions
-•	Revenue
-•	CPC / CTR Metrics
+## Tools and Techniques
 
-##🚀 Project Value
+- **Microsoft Excel:** data preparation, analysis, and dashboard development.
+- **Pivot Tables:** campaign-level summaries and comparisons.
+- **Charts and KPI cards:** visual presentation of marketing performance.
+- **Slicers:** filtering by product category, customer location, and referral source.
 
-This dashboard demonstrates practical skills in marketing analytics, campaign performance evaluation, and data-driven decision-making. It highlights the ability to transform marketing data into structured insights that support revenue growth and cost optimization.
+## Repository Files
 
+| File | Purpose |
+| --- | --- |
+| [Excel workbook](GetShop%20Today%20Customer%20Data%20%20Final%20project.xlsx) | Explore the analysis and interactive dashboard in Excel. |
+| [CSV dataset](Datasets/GetShop%20Today%20Customer%20Data.csv) | Access the source data supplied with the project. |
+| [Dashboard image](Images/dashboard_preview.png.jpeg) | View a static preview directly on GitHub. |
+
+## How to Explore the Project
+
+1. Start with the dashboard preview above for an overview.
+2. Open the [Excel workbook page](GetShop%20Today%20Customer%20Data%20%20Final%20project.xlsx) and use GitHub's **Download raw file** button.
+3. Open the downloaded workbook in Microsoft Excel.
+4. Use the dashboard slicers to explore product categories, customer locations, and referral sources.
+5. Review the [CSV dataset](Datasets/GetShop%20Today%20Customer%20Data.csv) to examine the underlying records.
+
+The image on GitHub is a static preview; the dashboard's interactive controls are available in the Excel workbook.
+
+## Skills Demonstrated
+
+Marketing analytics · Data preparation · Pivot Table analysis · Dashboard design · Business insight communication
+
+## Author
+
+[Emmanuel F. Kebodi](https://github.com/emmyk77)
