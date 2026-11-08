@@ -1,85 +1,38 @@
-# GetShop Today — E-Commerce Marketing Analytics Dashboard
+# GetShopToday Campaign Performance
 
-An Excel dashboard exploring marketing spend, campaign performance, customer conversions, and revenue across e-commerce channels.
+Influencer campaigns recorded the most paid transactions (60). Pay-per-click campaigns generated the most recorded revenue ($11,842.36) from 54 paid transactions. Across the 1,000 records, each dollar of marketing spend corresponded to $0.70 of recorded revenue.
 
-**Tools:** Microsoft Excel · Pivot Tables · Slicers · Data Visualization
+[Download the corrected campaign summary](GetShopToday-Campaign-Summary.xlsx) · [View source CSV](Datasets/GetShop%20Today%20Customer%20Data.csv)
 
-[View Excel Workbook](GetShop%20Today%20Customer%20Data%20%20Final%20project.xlsx) · [View Dataset](Datasets/GetShop%20Today%20Customer%20Data.csv) · [Explore the Analysis](#analysis-and-findings)
+![Excel campaign summary showing spend, clicks, paid transactions, recorded revenue, ROAS and CPA for each campaign.](Images/dashboard_preview.png.jpeg)
 
-## Dashboard Preview
+## Dashboard measures
 
-![GetShop Today marketing dashboard showing spend, traffic, conversions, and revenue by campaign, with filters for product category, customer location, and referral source.](Images/dashboard_preview.png.jpeg)
+| Measure | All campaigns | Calculation |
+| --- | ---: | --- |
+| Marketing spend | $84,042.16 | Sum of recorded spend |
+| Clicks | 4,831,721 | Sum of valid clicks |
+| Paid transactions | 276 | Count of transaction rows with PaidCustomer equal to 1 |
+| Recorded revenue | $59,067.11 | Sum of recorded revenue on paid transactions |
+| Return on ad spend (ROAS) | 0.70× | Recorded revenue divided by marketing spend |
+| Cost per acquisition (CPA) | $304.50 | Marketing spend divided by paid transactions |
 
-[View full-size dashboard](Images/dashboard_preview.png.jpeg)
+The campaign summary calculates channel and overall ROAS and CPA from the corresponding totals. CPA uses a paid transaction as the acquisition event. The 276 paid transactions represent 274 distinct customer IDs. ROAS describes revenue relative to marketing spend. Estimating profit would also require product and operating costs.
 
-## Project Overview
+## Explore the workbook
 
-This project uses Microsoft Excel to examine marketing performance for GetShop Today, an e-commerce business. It brings campaign spend, traffic, conversions, and revenue into one dashboard to support comparisons across marketing channels.
+1. Download the **corrected campaign summary** and open it in Excel. The workbook has one worksheet with six campaign rows and their totals.
+2. Compare paid transactions and recorded revenue by campaign. The ROAS and CPA columns contain formulas that recalculate when the aggregate inputs change.
+3. For the original dashboard layout and slicers, see the [original interactive Excel workbook](GetShop%20Today%20Customer%20Data%20%20Final%20project.xlsx). Its “Total ROI” and “Total CPA” cards and CPA chart sum row-level measures. Use the corrected campaign summary for acquisition cost and return on ad spend.
 
-The analysis covers Influencer, PPC, Email, Social Media, Affiliate, and Unknown campaign categories. Dashboard slicers allow users to explore results by product category, customer location, and referral source.
+The downloadable summary is an aggregate snapshot. Its six input rows contain channel totals and have no underlying transaction-level records or slicers.
 
-## Business Questions
+## Data preparation and interpretation
 
-- How is marketing spend distributed across campaign types?
-- Which campaigns attract the most clicks?
-- Which channels generate the most paid customers and revenue?
-- How do cost per acquisition (CPA), cost per click (CPC), and click-through rate (CTR) compare across campaigns?
+The source contains 1,000 transaction rows. The analysis counts a transaction as paid only when its flag equals 1. It treats 477 missing payment flags as unpaid, 180 missing spend values as zero, and 20 invalid click entries as zero. A further 43 paid transactions lack a revenue amount, so the revenue and ROAS figures reflect the amounts on record. The Unknown campaign group retains 120 source rows with that label.
 
-## Dashboard Metrics
+The original workbook’s **Cleaned** sheet stores spend, clicks, impressions and revenue in thousands. The campaign summary restores their original units. The source table retains its legacy ROI field, which measures revenue less marketing spend divided by marketing spend. The corrected summary uses ROAS, which can be calculated directly from the available fields.
 
-The following figures reproduce the values displayed in the dashboard preview.
+**Tools** · Microsoft Excel, PivotTables, PivotCharts, slicers and GETPIVOTDATA.
 
-| Metric | Displayed value |
-| --- | ---: |
-| Total spend | $84K |
-| Total clicks | 4,832K |
-| Total conversions | 276 |
-| Total revenue | $59K |
-| Total ROI | $49.54 |
-| Total CPA | $23K |
-
-> **Metric interpretation:** K means thousand. The existing dashboard displays ROI as a currency value and CPA as a total. Their formulas, aggregation, and number formats should be reviewed before using these two figures to assess profitability or acquisition efficiency.
-
-## Analysis and Findings
-
-| Analysis area | What the dashboard compares | Finding visible in the preview |
-| --- | --- | --- |
-| Spend | Marketing spend and CPA by campaign | Influencer campaigns have the highest displayed spend, at approximately $19K. |
-| Traffic | Clicks, CPC, and CTR by campaign | Influencer campaigns lead with approximately 980K clicks. |
-| Conversions | Paid customers by campaign | Influencer campaigns record 60 paid customers, followed by PPC with 54. |
-| Revenue | Revenue contribution by campaign | PPC has the highest displayed revenue, at approximately $12K, followed by Influencer at $11K. |
-
-These comparisons identify channels for further investigation. Spend, customer acquisition, and revenue should be considered together when evaluating campaign performance.
-
-## Tools and Techniques
-
-- **Microsoft Excel:** data preparation, analysis, and dashboard development.
-- **Pivot Tables:** campaign-level summaries and comparisons.
-- **Charts and KPI cards:** visual presentation of marketing performance.
-- **Slicers:** filtering by product category, customer location, and referral source.
-
-## Repository Files
-
-| File | Purpose |
-| --- | --- |
-| [Excel workbook](GetShop%20Today%20Customer%20Data%20%20Final%20project.xlsx) | Explore the analysis and interactive dashboard in Excel. |
-| [CSV dataset](Datasets/GetShop%20Today%20Customer%20Data.csv) | Access the source data supplied with the project. |
-| [Dashboard image](Images/dashboard_preview.png.jpeg) | View a static preview directly on GitHub. |
-
-## How to Explore the Project
-
-1. Start with the dashboard preview above for an overview.
-2. Open the [Excel workbook page](GetShop%20Today%20Customer%20Data%20%20Final%20project.xlsx) and use GitHub's **Download raw file** button.
-3. Open the downloaded workbook in Microsoft Excel.
-4. Use the dashboard slicers to explore product categories, customer locations, and referral sources.
-5. Review the [CSV dataset](Datasets/GetShop%20Today%20Customer%20Data.csv) to examine the underlying records.
-
-The image on GitHub is a static preview; the dashboard's interactive controls are available in the Excel workbook.
-
-## Skills Demonstrated
-
-Marketing analytics · Data preparation · Pivot Table analysis · Dashboard design · Business insight communication
-
-## Author
-
-[Emmanuel F. Kebodi](https://github.com/emmyk77)
+[Emmanuel Kebodi](https://github.com/emmyk77)
